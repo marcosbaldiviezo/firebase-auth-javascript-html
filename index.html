@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBsVoIKrMT5MSaUs6xujaE7sVdFFFzHb3I",
+        authDomain: "okayfunds.firebaseapp.com",
+        databaseURL: "https://okayfunds.firebaseio.com",
+        projectId: "okayfunds",
+        storageBucket: "okayfunds.appspot.com",
+        messagingSenderId: "114563503218"
+    };
+    firebase.initializeApp(config);
+    </script>
+</head>
+<body>
+    <h4>Registro de usuarios</h4>
+    <input type="email" placeholder="email" id="email">
+    <input type="password" placeholder="password" id="password">
+    <button onclick="registrar()">Enviar</button>
+
+    <h4>Ingreso de usuarios</h4>
+    <input type="email" placeholder="email" id="email2">
+    <input type="password" placeholder="password" id="password2">
+    <button onclick="ingresar()">Acceder</button>
+
+    <div id="contenido">
+       
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
